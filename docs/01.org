@@ -25,13 +25,13 @@ sidebar_label: 01 - Docusaurus が攻めてきた!
   違う。 [[https://github.com/GitbookIO/gitbook][GitBook]] 以外のソフトウェアを試してみようと思って，たまたま目についたのが Docusaurus だっただけだ。だって，マスコットキャラクターの Slash がかわいかったから…。
 
   ![[./assets/docusaurus_keytar.svg?sanitize=true][docusaurus-keytar]]
-  (c) Facebook, Inc.
+  <center>(c) Facebook, Inc.</center>
 
   「証人。言いたいことはありますか」EeePC の問いかけに ThinkPad がわざとらしい泣き真似をみせる。「くすんくすん」
 
   「かわいそうに。大変な目にあったのでしょうね」「はい。この人は，ずっと怖い顔で私をにらみつけて…何日も私を痛めつけました。しくしく」
 
-  ひどい。のどを抑えたまま，涙が浮かんできた。たしかに Docusaurus は GitBook や [[https://vuepress.vuejs.org/][VuePress]] よりは難しそうだと思った。でも，私は進歩したかった。いきなり .js ファイルをいじる必要があるなんて思わなかっただけで。
+  ひどい言われようだ。のどを抑えたまま，涙が浮かんできた。たしかに Docusaurus は GitBook や [[https://vuepress.vuejs.org/][VuePress]] よりは難しそうだと思った。でも，私は進歩したかった。いきなり .js ファイルをいじる必要があるなんて思わなかっただけで。
 
   「被告，黙っているということは罪を認めるのだな？」
 
