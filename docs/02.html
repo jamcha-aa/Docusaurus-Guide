@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>02 - インストールはできるけど · Docusaurus の逆襲</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="私は ThinkPad に向きあったまま考えている。隣には EeePC が鎮座し，困ったときの補助として待機している。"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="02 - インストールはできるけど · Docusaurus の逆襲"/><meta property="og:type" content="website"/><meta property="og:url" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/index.html"/><meta property="og:description" content="私は ThinkPad に向きあったまま考えている。隣には EeePC が鎮座し，困ったときの補助として待機している。"/><meta property="og:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/docusaurus.png"/><link rel="shortcut icon" href="/Docusaurus-Guide/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><link rel="stylesheet" href="/Docusaurus-Guide/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Docusaurus-Guide/"><img class="logo" src="/Docusaurus-Guide/img/jamcha.svg" alt="Docusaurus の逆襲"/><h2 class="headerTitleWithLogo">Docusaurus の逆襲</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span> </span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle"> </h3><ul><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/01.html">01 - Docusaurus が攻めてきた!</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Docusaurus-Guide/docs/02.html">02 - インストールはできるけど</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">02 - インストールはできるけど</h1></header><article><div><span><p>私は ThinkPad に向きあったまま考えている。隣には EeePC が鎮座し，困ったときの補助として待機している。</p>
+<p>「手さぐりみたいになるけど，いい？」「誰に許可を求めているんですか？」「構わん」早速 EeePC の助けが入った。これからこんな様子で進めていくことになるのだろうか。</p>
+<p>「ええと，インストールは <code>sudo yarn add global docusaurus-init</code> で OK。npm なら npm install で」</p>
+<p>端末で記号が回転しながらパッケージをインストールしてゆく。</p>
+<p>「今回は GitHub でドキュメントを公開する予定だから，GitHub のリポジトリを作っておきます」</p>
+<p>私は慣れた手つきで GitHub のリポジトリを作成し，ThinkPad の中に clone した。</p>
+<p>「それじゃあ README.md のある場所に移動して， <code>docusaurus-init</code> 。しばらくすると，こんな感じでいろんなファイルが作られる」</p>
+<pre><code class="hljs">root-directory
+├── docs-examples-from-docusaurus
+│   ├── doc1.md
+│   ├── doc2.md
+│   ├── doc3.md
+│   ├── exampledoc4.md
+│   └── exampledoc5.md
+└── website
+    ├── blog-examples-from-docusaurus
+    │   ├── 2016-03-11-blog-post.md
+    │   ├── 2017-04-10-blog-post-two.md
+    │   ├── 2017-09-25-testing-rss.md
+    │   ├── 2017-09-26-adding-rss.md
+    │   └── 2017-10-24-new-version-1.0.0.md
+    ├── core
+    │   └── Footer.js
+    ├── package.json
+    ├── pages
+    ├── sidebars.json
+    ├── siteConfig.js
+    └── static
+</code></pre>
+<p>「このままじゃ動いてくれないから， <code>docs-examples-from-docusaurus</code> を <code>docs</code>, <code>blog-examples-from-docusaurus</code> を <code>blog</code> にリネームします。それじゃあ早速起動してみよう」</p>
+<p>私はターミナルで <code>website</code> に移動し， <code>yarn start</code> (npm の場合は npm start) をタイプした。</p>
+<p><img src="./assets/SS1.png" alt="SS1"></p>
+<p>「ブラウザが開いて勝手にプレビューしてくれます」「ほう，便利だな」「でしょ？ブラウザが開かない場合は <code>localhost:3000</code> で見られるはず。で，Docusaurus の長所がプレビューの速さなんだけど」</p>
+<p>そう言って私は元のファイルを編集する。</p>
+<p><img src="./assets/SS2.png" alt="SS2"></p>
+<p>そうして保存すると，1 秒とかからずにページが更新された。</p>
+<p><img src="./assets/SS3.png" alt="SS3"></p>
+<p>「これはすごい」EeePC も驚く。「修正内容をすぐに確認できるから，ページを作るのもはかどると思う」</p>
+<p>「見たところ何の問題もなさそうだが」「うん。問題があるのは私」「ほら，自分をけなすのが君の悪いクセだぞ」「Docusaurus のトップページに <a href="https://docusaurus.io/">&quot;Easy to maintain&quot;</a> って書いてあったから，どうやってレイアウト変えるのか中身を見たらね，…全部 Javascript だったんだよ」</p>
+<p><br>
+<br>
+(c) 2018 jamcha (<a href="mailto:jamcha.aa@gmail.com">jamcha.aa@gmail.com</a>).</p>
+<p><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="cc by-sa"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Docusaurus-Guide/docs/01.html">← 01 - Docusaurus が攻めてきた!</a></div></div></div><nav class="onPageNav"></nav></div></div></body></html>
