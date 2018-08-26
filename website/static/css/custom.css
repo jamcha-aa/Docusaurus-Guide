@@ -14,3 +14,16 @@
 
 @media only screen and (min-width: 1500px) {
 }
+
+/* indent
+p {
+    text-indent: 1em;
+}
+*/
+
+/*
+body{
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+}
+*/
