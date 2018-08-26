@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>05 - 決戦! &quot;index.js&quot; · Docusaurus の逆襲</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="私が真っ暗な部屋で顔にライトを当てる。すかさず ThinkPad が言う。「気持ち悪いです」"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="05 - 決戦! &quot;index.js&quot; · Docusaurus の逆襲"/><meta property="og:type" content="website"/><meta property="og:url" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/index.html"/><meta property="og:description" content="私が真っ暗な部屋で顔にライトを当てる。すかさず ThinkPad が言う。「気持ち悪いです」"/><meta property="og:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/docusaurus.png"/><link rel="shortcut icon" href="/Docusaurus-Guide/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><link rel="stylesheet" href="/Docusaurus-Guide/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Docusaurus-Guide/"><img class="logo" src="/Docusaurus-Guide/img/jamcha.svg" alt="Docusaurus の逆襲"/><h2 class="headerTitleWithLogo">Docusaurus の逆襲</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span> </span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle"> </h3><ul><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/01.html">01 - Docusaurus が攻めてきた!</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/02.html">02 - インストールはできるけど</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/03.html">03 - Slash の謎</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/04.html">04 - docs の書式と website</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Docusaurus-Guide/docs/05.html">05 - 決戦! &quot;index.js&quot;</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">05 - 決戦! &quot;index.js&quot;</h1></header><article><div><span><p>私が真っ暗な部屋で顔にライトを当てる。すかさず ThinkPad が言う。「気持ち悪いです」</p>
+<p>「不気味だって言ってよ!もう…」そう言ってライトを消し，部屋の照明をつけると，EeePC も私の奇行につっこんだ。「今の小芝居はなんだ？」「寿命が削られた私の気持ちを表しました」</p>
+<p>そうして私は <code>website</code> の中からひとつのファイルを表示させる。</p>
+<p><code>index.js</code></p>
+<p>その中身が目に入った瞬間，低く鈍い音が反響したかのような錯覚をおぼえた。私が神妙な顔つきになり，ただならぬ雰囲気に EeePC も身構える。</p>
+<p>「 <code>website/pages/en</code> の中に index.js っていうファイルがあるんだけど」「ああ」「まず読んでみて」</p>
+<p><br>
+<a href="https://github.com/facebook/Docusaurus/blob/master/examples/basics/pages/en/index.js">https://github.com/facebook/Docusaurus/blob/master/examples/basics/pages/en/index.js</a></p>
+<pre><code class="hljs">const React = require('react');
+
+const CompLibrary = require('../../core/CompLibrary.js');
+const MarkdownBlock = CompLibrary.MarkdownBlock; /* Used to read markdown */
+const Container = CompLibrary.Container;
+const GridBlock = CompLibrary.GridBlock;
+
+const siteConfig = require(process.cwd() + '/siteConfig.js');
+
+function imgUrl(img) {
+  return siteConfig.baseUrl + 'img/' + img;
+}
+
+function docUrl(doc, language) {
+  return siteConfig.baseUrl + 'docs/' + (language ? language + '/' : '') + doc;
+}
+</code></pre>
+<p><br>
+こうした記述は 200 行以上にわたって続いている。まぎれもない Javascript のファイルだ。</p>
+<p>「前にさ，Docusaurus のトップページ，見せたでしょ？」「あ？ああ」</p>
+<p>私の言葉を聞くなり，ThinkPad は過去のスクリーンショットを検索して画面に表示した。これは Docusaurus をインストールしたとき，説明のために省かれたものだ。簡略化されてはいるものの，レイアウト自体は <a href="https://docusaurus.io/">公式ページ</a> とほぼ同じである。</p>
+<p><br>
+<img src="./assets/toppage.png" alt="top page"></p>
+<p><br>
+「このページね， <strong>さっきのファイルから作られてるんだ</strong> 」</p>
+<p>「え」EeePC が驚く。「さっきの index.js からか」</p>
+<p>私はうなずく。「そう。だからトップページを変えるには，さっきのファイルを直接いじるしかない」</p>
+<p><br>
+沈黙が場を支配する。React はおろか Javascript を一行も書いたことのないへっぽこに突如として降りかかってきたあまりにも過酷な試練。</p>
+<p><br>
+「私ね」ふいに思い出したように言った。「ああ」「コンピュータに関して，私がやらなきゃいけないことで，もし地球上で誰かができてることなら，私にもできるって，そう思ってるんだ」</p>
+<p>EeePC はその言葉を聞き，なつかしい様子で「そうだな」と言った。</p>
+<p>「だから，今回も絶対できるって思って，がんばった」「ああ。君はいつでも，その不屈の心で，自分の殻をやぶってきた」「うん，ありがと」</p>
+<p>「だがひとつ言っておきたい」EeePC は急に真剣な口調になる。「これまで，そしてこれからのことだ。君は誰かの期待にこたえようとして無茶をしすぎる。そのおかげで君は飛躍的に成長してきたかもしれない。けれども身体を壊しては元も子もないんだ。もっと自分を大切にしてほしい」</p>
+<p>何度言われたことか。そのたびに忘れ，そのたびに同じことを言われる。</p>
+<p>「君もね」私はそう答えた。</p>
+<p><br>
+「それで，君はどうやって Javascript を書けるようになったんだ？」「ええと，class とか extends ってあるからオブジェクト指向の言語だなっていうのはわかったんだけど」</p>
+<p>本当にこいつは Javascript を知らないんだ。EeePC はそう思った。</p>
+<p>「でも入門から順番にやって身につけたわけじゃないよ」「え？じゃあどうやったんだ？」</p>
+<p>私は <a href="https://almin.js.org/">Almin</a> のページを見せる。「Almin の公式ページも Docusaurus だったから，これの index.js がどうなってるか読んで勉強させてもらったの。ありがとうございます」「オープンソースはすばらしいな」「うん。それでね，Docusaurus にはレイアウトを作るためのお助け機能があるのがわかったんだ」「お助け機能？」</p>
+<p><br>
+<a href="https://docusaurus.io/docs/en/api-pages">https://docusaurus.io/docs/en/api-pages</a></p>
+<pre><code class="hljs">const MarkdownBlock = CompLibrary.MarkdownBlock;
+
+&lt;MarkdownBlock&gt;
+  [Markdown syntax for a link](http://www.example.com)
+&lt;/MarkdownBlock&gt;;
+</code></pre>
+<p><br>
+「Docusaurus の index.js は Markdown が書けるんだよ」「おお!」「最初は &lt;p&gt; 要素で説明文を書いてたんだけど」「君は html は書けるのか？」「ちょぴっとね。そうしたら React が『 &lt;p&gt; 連発なんてクソコード書くんじゃねえ。key を指定しやがれ』みたいな警告出してきて」</p>
+<p>「不適切な言葉は避けてください」ThinkPad が警告を出す。</p>
+<p>「ごめん。それでね，すごくこわかったんだけど，でも MarkdownBlock は何行続いても一個のまとまりだから警告も出なくなった」</p>
+<p>「じゃあトップページで単に文章を書きたいなら MarkdownBlock が良いんだな？」「ちゃんと書ける人は自由自在だと思う。でも私は書けないから助かった。<a href="https://docusaurus.io/docs/en/api-pages">https://docusaurus.io/docs/en/api-pages</a> には他にも役立つ説明がいろいろあるからぜひ読みましょう!」</p>
+<p><br>
+<br>
+(c) 2018 jamcha (<a href="mailto:jamcha.aa@gmail.com">jamcha.aa@gmail.com</a>).</p>
+<p><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="cc by-sa"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Docusaurus-Guide/docs/04.html">← 04 - docs の書式と website</a></div></div></div><nav class="onPageNav"></nav></div></div></body></html>
