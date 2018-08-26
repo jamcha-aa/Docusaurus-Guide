@@ -40,6 +40,7 @@ sidebar_label: 04 - docs の書式と website
    「docs の中にいくつか markdown ファイルがあるんだけど，doc1.md を見ると最初にこんなのが書いてある」
 
    <br>
+   https://github.com/facebook/Docusaurus/blob/master/examples/basics/docs-examples-from-docusaurus/doc1.md
    #+BEGIN_SRC 
    ---
    id: doc1
@@ -79,6 +80,7 @@ sidebar_label: 04 - docs の書式と website
   #+END_SRC 
 
    <br>
-   (c) 2018 jamcha (jamcha.aa@gmail.com).
-                
+   <br>
+   (c) 2018 jamcha (jamcha.aa@gmail.com). 
+
    ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]
