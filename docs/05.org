@@ -101,7 +101,7 @@ sidebar_label: 05 - 決戦! "index.js"
 
   「ごめん。それでね，すごくこわかったんだけど，でも MarkdownBlock は何行続いても一個のまとまりだから警告も出なくなった」
 
-  「じゃあトップページで単に文章を書きたいなら MarkdownBlock が良いんだな？」「ちゃんと書ける人は自由自在だと思う。でも私は書けないから助かった。https://docusaurus.io/docs/en/api-pages には他にも役立つ説明がいろいろあるからぜひ読みましょう!」
+  「じゃあトップページで単に文章を書きたいなら MarkdownBlock が良いんだな？」「Javascript ちゃんと書ける人は自由自在だと思うけど，書けないような私みたいな人は助かると思う。https://docusaurus.io/docs/en/api-pages には他にも役立つ説明がいろいろあるからぜひ読みましょう!」
 
   <br>
   <br>
