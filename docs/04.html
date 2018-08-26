@@ -1,0 +1,77 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>04 - docs の書式と website · Docusaurus の逆襲</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="さっきの元気はどこへやら，まるで時間をさかのぼったかのように，私は固まってしまっていた。もはや EeePC も私をどう突っつけばよいのかわからず途方に暮れている。"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="04 - docs の書式と website · Docusaurus の逆襲"/><meta property="og:type" content="website"/><meta property="og:url" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/index.html"/><meta property="og:description" content="さっきの元気はどこへやら，まるで時間をさかのぼったかのように，私は固まってしまっていた。もはや EeePC も私をどう突っつけばよいのかわからず途方に暮れている。"/><meta property="og:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/docusaurus.png"/><link rel="shortcut icon" href="/Docusaurus-Guide/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><link rel="stylesheet" href="/Docusaurus-Guide/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Docusaurus-Guide/"><img class="logo" src="/Docusaurus-Guide/img/jamcha.svg" alt="Docusaurus の逆襲"/><h2 class="headerTitleWithLogo">Docusaurus の逆襲</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span> </span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle"> </h3><ul><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/01.html">01 - Docusaurus が攻めてきた!</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/02.html">02 - インストールはできるけど</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/03.html">03 - Slash の謎</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Docusaurus-Guide/docs/04.html">04 - docs の書式と website</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">04 - docs の書式と website</h1></header><article><div><span><p>さっきの元気はどこへやら，まるで時間をさかのぼったかのように，私は固まってしまっていた。もはや EeePC も私をどう突っつけばよいのかわからず途方に暮れている。</p>
+<p>「時間は戻りません」ThinkPad が指摘する。「ちょっと，心を読まないでよ」「いいえ，『時間をさかのぼったかのように』と発話しました。録音記録を再生して確認しますか？」「いいって」</p>
+<p>私が椅子の背もたれによりかかり，足を投げ出す。「下品な行動は慎しんでください」「いいじゃん。へるもんじゃなし」「そういう発言は行為者がするものではありません」</p>
+<p>頭にきた私は身体を起こして ThinkPad の画面をのぞきこむ。「いちいちうるさいな。君は私のミスばかり指摘していればいいけどさ，ひとりじゃ何も生み出さないよね」</p>
+<p>「おい，言いすぎだぞ」EeePC がたまらず割り込む。「だって私たちがこんなに苦労してるのに黙ったままなんだもん。ずるいよ」</p>
+<p>「苦労，とずるい，の対象が不明です」「私たちは Docusaurus の設定方法をどう説明すればいいのかわからないから苦労してるのに，君は指示を待つばかりで何のアドバイスもしてくれないからずるいって言ってるの」</p>
+<p>「私に Docusaurus 設定法を記述するためのアドバイスを要求しているのですか？」「そうだよ」「編集したファイル名と変更内容をアルファベット順に記載すれば完了します」「そんな雑な」</p>
+<p>「いや，それは有効かもしれない」EeePC が ThinkPad に乗る。「え？」「君はレイアウトを変えるためにどこを変更すればいいのかわかっているのか？それとも偶然か？」</p>
+<p>私が腰に手を当てて胸をはる。「そりゃあわかってますよ。がんばってドキュメント読んだもん」「だろうな。そうじゃなきゃ，公開できていないはずだ。じゃあ，わかってることを書き出せばいいじゃないか。アルファベット順なら探しやすいしな」</p>
+<p>「イケアの設計図みたいにきれいにならないけど，いいの？」「あたりまえじゃないか。変更が必要なファイルに，順番なんてもともとないんだから」</p>
+<p>EeePC は尻込みする私を必死に鼓舞する。次第に私もできるような気がしてきた。</p>
+<p>「じゃ，じゃあ，ファイル，順番に説明するから」「そうこなくちゃな!」私と EeePC は心の中で拳を突き合わせる。</p>
+<p>「コナクチャナとは何ですか？」</p>
+<p>ThinkPad だけはどこまでも冷静だった。</p>
+<h1><a class="anchor" aria-hidden="true" id="docs"></a><a href="#docs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>docs</h1>
+<p>「docs の中にいくつか markdown ファイルがあるんだけど，doc1.md を見ると最初にこんなのが書いてある」</p>
+<p><br></p>
+<pre><code class="hljs">---
+id: doc1
+title: Latin-ish
+sidebar_label: Example Page
+---
+</code></pre>
+<p><br>
+「Docusaurus は文書に id を振らなきゃいけない。ここが GitBook と違うところ。title は文字通りタイトルで，sidebar~っていうのは目次に表示したい名前」</p>
+<p>「…」EeePC が気の利いた質問をしないので私が続ける。「えっと，ここに書いた情報はあとで説明する <code>sidebars.json</code> で使います!」</p>
+<p>「ああ，すまん。私は Docusaurus の編集をほとんど見てないからわからないんだ」EeePC は思い出したように言う。それを聞いた私が ThinkPad をにらみつけるが，「何か用ですか？」と言わんばかりに泰然とたたずんでいる。私はため息をついた。</p>
+<p>「残りは全部 <code>website</code> フォルダの説明になります!」「全部か」「そう。全部!質問があったらどんどん聞いてね!」私は ThinkPad の方を見ながら言う。</p>
+<p>「質問があります」早速 ThinkPad がたずねてくる。「はい，なんですか!」</p>
+<p>「冷蔵庫にあるヨーグルトはもう食べましたか？賞味期限が迫っています」</p>
+<p>「…」</p>
+<p>「待て。はやまるな。手をおろせ。そう。ゆっくりだ。あとで食べよう。あとで，な？」</p>
+<h1><a class="anchor" aria-hidden="true" id="footerjs"></a><a href="#footerjs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Footer.js</h1>
+<p>「 <code>core</code> の中に一個だけあるファイル。これを編集すると，画面の一番下にあるちょっと暗い色の背景に文字のリンクが色々張ってあるやつを変えられる」「フッタな」「でも本とか論文とかのフッタとは役割がちょっと違うよね」「まあな。ただし，補助的な情報を表示するという意味では同じだ」</p>
+<p>「私の場合は要らないので全部消しました」</p>
+<pre><code class="hljs">render() {
+    const currentYear = new Date().getFullYear();
+    return ([]);
+}
+</code></pre>
+<p><br>
+(c) 2018 jamcha (<a href="mailto:jamcha.aa@gmail.com">jamcha.aa@gmail.com</a>).</p>
+<p><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="cc by-sa"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Docusaurus-Guide/docs/03.html">← 03 - Slash の謎</a></div></div></div><nav class="onPageNav"></nav></div></div></body></html>
