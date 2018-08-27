@@ -1,0 +1,87 @@
+#+OPTIONS: toc:nil
+#+OPTIONS: -:nil
+#+OPTIONS: ^:{}
+
+---
+id: 07
+title: 07 - sidebars.json
+sidebar_label: 07 - sidebars.json
+---
+
+  EeePC は私の腕にテープが貼られていることに気づいた。「君，その手」
+
+  「なに？」「テーピングか？」「違うよ。ストリートファイトで拳を痛めないように」
+
+  「冗談はよせ。腱鞘炎だろう？」「そんなんじゃないって」
+
+  「昨日は腱鞘炎について 24 件記録が残っていますが」ThinkPad が正直に言い，私はむっとする。
+
+  「病院には行ったのか？」「明日行く。あと少しで終わるし」「おい，悪化するぞ」「骨は折って強くする」「あのなあ，そういう根性論がよくないってずっと言ってるだろう」
+
+  なおも続行しようとする私と EeePC のあいだで激しい応酬があり，私がやめるまで妨害を続けるという EeePC の脅迫に屈した私は，やむなく中断することになった。
+
+  <br>
+  片手が使えなくなった私，EeePC，ThinkPad が三角形を描いている。
+
+  「原因はキーボードだな？」「違う。私の手が軟弱だから」「おい，そうやっていつも君は…。はぁ。もっと早くキーボードを外付けにするよう言っておくべきだった」「ThinkPad は悪くない」「ああ。誰も悪くない。でも君は腱鞘炎になりやすい。だから普段から気をつけなきゃいけない」「せっかくいいキーボードがついてるのに，外付けなんて，かっこわるいよ」「使いすぎなければな」
+
+  それから私は音声認識を利用し，慣れない片手でテキストを編集していくことになった。
+
+  「便利だねえ」「音声認識か？」「うん」「じゃあこれから使っていけばいい」「小説のセリフ読むのは恥ずかしいけど」「まぁ…そうかもな」
+
+** sidebars.json
+
+  「 ~sidebars.json~ は目次のページ。GitBook とかだと ~SUMMARY.md~ が担当してる」
+
+  <br>
+  https://github.com/facebook/Docusaurus/blob/master/examples/basics/sidebars.json
+  #+BEGIN_SRC 
+  {
+    "docs": {
+      "Docusaurus": ["doc1"],
+      "First Category": ["doc2"],
+      "Second Category": ["doc3"]
+    },
+    "docs-other": {
+      "First Category": ["doc4", "doc5"]
+    }
+  }
+  #+END_SRC
+
+  <br>
+  「 ~"First Category"~ とか書いてあるのが目次の小見出しで， ~doc1~ とかが個々のファイル id。 [[https://jamcha-aa.github.io/Docusaurus-Guide/docs/04.html][前にも説明した]] けど，Docusaurus は文書ごとに id を振らなきゃいけない。その値をもとにして，ここで並べるわけ。 ~[ ]~ の中には複数のファイルを書けるよ。たとえば私の場合はこんな感じ」
+
+  <br>
+  #+BEGIN_SRC 
+  {
+    "docs": {
+        " ": ["01", "02", "03", "04", "05", "06", "07"]
+    }
+  }
+  #+END_SRC
+
+  <br>
+  EeePC から質問がこないので，私が話す。「このファイル，拡張子が json なんだけど」「ああ」「.js との違いってわかる？」
+
+  「json is an open-standard ...」ThinkPad が wikipedia を読み上げはじめる。「あ，待って。私が説明するから。聞かれたときのために準備しておいたんだ」
+
+  「すまん。もっと私が気を利かせればよかった」そう謝る EeePC に，私は気にしないように言う。もともと自分でも知りたかったからだ。
+
+  <br>
+  「json てプログラムじゃなくて設定ファイルみたいなものなんだ。 ~.ini~ みたいな。共通した書式だから，Javascript 以外でも使えるようになってるんだって」「ほう」「これだけだと『ふーん』て感じなんだけど，面白いのが，json て 2001 年に *発見* されたんだって」
+
+  「発見？」EeePC も興味をひかれる。「そう。作られた，じゃなくて発見」
+
+  #+BEGIN_QUOTE
+  [[https://speakerdeck.com/circled9/jsonfalseli-shi?slide=11][2001 年に Douglas Crockford 氏が見つけて命名したのがはじまりと言われている。]]
+  #+END_QUOTE
+
+  「これ初めて見たとき，Javascript の文法を使って新しい言語ができたんじゃないか，って思ったんだけど」「まあ，発見ていうからには，な」「そしたらね，Crockford さん本人が [[https://www.youtube.com/watch?v=-C-JoyNuQJs][講演]] で説明してたんだけど，json みたいなアイデアは既に昔からあって，自分はそれを発見したんだ，って言ってる」「ふむ」「『こんな便利なものがあったんだ!』って感じ？だから発明じゃなくて発見」「なるほどな」
+
+  
+
+  <br>
+  <br>
+  (c) 2018 jamcha (jamcha.aa@gmail.com).
+                
+  ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]
