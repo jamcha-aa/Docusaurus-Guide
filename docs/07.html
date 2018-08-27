@@ -1,0 +1,84 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>07 - sidebars.json · Docusaurus の逆襲</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="EeePC は私の腕にテープが貼られていることに気づいた。「君，その手」"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="07 - sidebars.json · Docusaurus の逆襲"/><meta property="og:type" content="website"/><meta property="og:url" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/index.html"/><meta property="og:description" content="EeePC は私の腕にテープが貼られていることに気づいた。「君，その手」"/><meta property="og:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/docusaurus.png"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/docusaurus.png"/><link rel="shortcut icon" href="/Docusaurus-Guide/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+        document.addEventListener('DOMContentLoaded', function() {
+          addBackToTop(
+            {"zIndex":100}
+          )
+        });
+        </script><link rel="stylesheet" href="/Docusaurus-Guide/css/main.css"/></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/Docusaurus-Guide/"><img class="logo" src="/Docusaurus-Guide/img/jamcha.svg" alt="Docusaurus の逆襲"/><h2 class="headerTitleWithLogo">Docusaurus の逆襲</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><i></i></div><h2><i>›</i><span> </span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle"> </h3><ul><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/01.html">01 - Docusaurus が攻めてきた!</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/02.html">02 - インストールはできるけど</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/03.html">03 - Slash の謎</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/04.html">04 - docs の書式と website</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/05.html">05 - 決戦! &quot;index.js&quot;</a></li><li class="navListItem"><a class="navItem" href="/Docusaurus-Guide/docs/06.html">06 - 刮目せよ! 〜&quot;index.js&quot; を読む〜</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/Docusaurus-Guide/docs/07.html">07 - sidebars.json</a></li></ul></div></div></section></div><script>
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              const headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                if (event.target.tagName === 'A') {
+                  document.body.classList.remove('tocActive');
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">07 - sidebars.json</h1></header><article><div><span><p>EeePC は私の腕にテープが貼られていることに気づいた。「君，その手」</p>
+<p>「なに？」「テーピングか？」「違うよ。ストリートファイトで拳を痛めないように」</p>
+<p>「冗談はよせ。腱鞘炎だろう？」「そんなんじゃないって」</p>
+<p>「昨日は腱鞘炎について 24 件記録が残っていますが」ThinkPad が正直に言い，私はむっとする。</p>
+<p>「病院には行ったのか？」「明日行く。あと少しで終わるし」「おい，悪化するぞ」「骨は折って強くする」「あのなあ，そういう根性論がよくないってずっと言ってるだろう」</p>
+<p>なおも続行しようとする私と EeePC のあいだで激しい応酬があり，私がやめるまで妨害を続けるという EeePC の脅迫に屈した私は，やむなく中断することになった。</p>
+<p><br>
+片手が使えなくなった私，EeePC，ThinkPad が三角形を描いている。</p>
+<p>「原因はキーボードだな？」「違う。私の手が軟弱だから」「おい，そうやっていつも君は…。はぁ。もっと早くキーボードを外付けにするよう言っておくべきだった」「ThinkPad は悪くない」「ああ。誰も悪くない。でも君は腱鞘炎になりやすい。だから普段から気をつけなきゃいけない」「せっかくいいキーボードがついてるのに，外付けなんて，かっこわるいよ」「使いすぎなければな」</p>
+<p>それから私は音声認識を利用し，慣れない片手でテキストを編集していくことになった。</p>
+<p>「便利だねえ」「音声認識か？」「うん」「じゃあこれから使っていけばいい」「小説のセリフ読むのは恥ずかしいけど」「まぁ…そうかもな」</p>
+<h1><a class="anchor" aria-hidden="true" id="sidebarsjson"></a><a href="#sidebarsjson" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>sidebars.json</h1>
+<p>「 <code>sidebars.json</code> は目次のページ。GitBook とかだと <code>SUMMARY.md</code> が担当してる」</p>
+<p><br>
+<a href="https://github.com/facebook/Docusaurus/blob/master/examples/basics/sidebars.json">https://github.com/facebook/Docusaurus/blob/master/examples/basics/sidebars.json</a></p>
+<pre><code class="hljs">{
+  &quot;docs&quot;: {
+    &quot;Docusaurus&quot;: [&quot;doc1&quot;],
+    &quot;First Category&quot;: [&quot;doc2&quot;],
+    &quot;Second Category&quot;: [&quot;doc3&quot;]
+  },
+  &quot;docs-other&quot;: {
+    &quot;First Category&quot;: [&quot;doc4&quot;, &quot;doc5&quot;]
+  }
+}
+</code></pre>
+<p><br>
+「 <code>&quot;First Category&quot;</code> とか書いてあるのが目次の小見出しで， <code>doc1</code> とかが個々のファイル id。 <a href="https://jamcha-aa.github.io/Docusaurus-Guide/docs/04.html">前にも説明した</a> けど，Docusaurus は文書ごとに id を振らなきゃいけない。その値をもとにして，ここで並べるわけ。 <code>[ ]</code> の中には複数のファイルを書けるよ。たとえば私の場合はこんな感じ」</p>
+<p><br></p>
+<pre><code class="hljs">{
+  &quot;docs&quot;: {
+      &quot; &quot;: [&quot;01&quot;, &quot;02&quot;, &quot;03&quot;, &quot;04&quot;, &quot;05&quot;, &quot;06&quot;, &quot;07&quot;]
+  }
+}
+</code></pre>
+<p><br>
+EeePC から質問がこないので，私が話す。「このファイル，拡張子が json なんだけど」「ああ」「.js との違いってわかる？」</p>
+<p>「json is an open-standard ...」ThinkPad が wikipedia を読み上げはじめる。「あ，待って。私が説明するから。聞かれたときのために準備しておいたんだ」</p>
+<p>「すまん。もっと私が気を利かせればよかった」そう謝る EeePC に，私は気にしないように言う。もともと自分でも知りたかったからだ。</p>
+<p><br>
+「json てプログラムじゃなくて設定ファイルみたいなものなんだ。 <code>.ini</code> みたいな。共通した書式だから，Javascript 以外でも使えるようになってるんだって」「ほう」「これだけだと『ふーん』て感じなんだけど，面白いのが，json て 2001 年に <strong>発見</strong> されたんだって」</p>
+<p>「発見？」EeePC も興味をひかれる。「そう。作られた，じゃなくて発見」</p>
+<blockquote>
+<p><a href="https://speakerdeck.com/circled9/jsonfalseli-shi?slide=11">2001 年に Douglas Crockford 氏が見つけて命名したのがはじまりと言われている。</a></p>
+</blockquote>
+<p>「これ初めて見たとき，Javascript の文法を使って新しい言語ができたんじゃないか，って思ったんだけど」「まあ，発見ていうからには，な」「そしたらね，Crockford さん本人が <a href="https://www.youtube.com/watch?v=-C-JoyNuQJs">講演</a> で説明してたんだけど，json みたいなアイデアは既に昔からあって，自分はそれを発見したんだ，って言ってる」「ふむ」「『こんな便利なものがあったんだ!』って感じ？だから発明じゃなくて発見」「なるほどな」</p>
+<p><br>
+<br>
+(c) 2018 jamcha (<a href="mailto:jamcha.aa@gmail.com">jamcha.aa@gmail.com</a>).</p>
+<p><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="cc by-sa"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Docusaurus-Guide/docs/06.html">← 06 - 刮目せよ! 〜&quot;index.js&quot; を読む〜</a></div></div></div><nav class="onPageNav"></nav></div></div></body></html>
