@@ -82,8 +82,8 @@ const siteConfig = {
   onPageNav: 'separate',
 
   /* Open Graph and Twitter card images */
-  ogImage: 'img/docusaurus.png',
-  twitterImage: 'img/docusaurus.png',
+  ogImage: 'img/jamcha.svg',
+  twitterImage: 'img/jamcha.svg',
 
   scrollToTop: true,
   scrollToTopOptions: {
