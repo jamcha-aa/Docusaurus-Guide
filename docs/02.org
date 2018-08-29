@@ -20,7 +20,7 @@ sidebar_label: 02 - インストールはできるけど
 
   「ええと，インストールは ~sudo yarn add global docusaurus-init~ で OK。npm なら npm install で」
 
-  端末で記号が回転しながらパッケージをインストールしてゆく。
+  コマンドをタイプすると，端末のなかで記号が回転し，パッケージがインストールされる。
 
   「今回は GitHub でドキュメントを公開する予定だから，GitHub のリポジトリを作っておきます」
 
