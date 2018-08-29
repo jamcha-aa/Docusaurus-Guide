@@ -21,7 +21,7 @@ const users = [
 
 const siteConfig = {
   title: 'Docusaurus の逆襲' /* title for your website */,
-    tagline: 'DocusaurusでGitHubと遊ぶ。 (全9話)',
+    tagline: 'DocusaurusでGitHubと遊ぶ。 (全10話)',
   url: 'https://jamcha-aa.github.io/Docusaurus-Guide/' /* your website url */,
   baseUrl: '/Docusaurus-Guide/' /* base url for your project */,
   // For github.io type URLs, you would set the url and baseUrl like:
