@@ -38,15 +38,17 @@
 <p>「 <code>siteConfig.js</code> で気をつけなきゃいけないのは <code>baseUrl</code> で…」</p>
 <p><br>
 「なあ，いったん全部テキストに起こしてから編集したほうがよくないか？」EeePC が指摘する。</p>
-<p>腱鞘炎で片手が使えなくなった私は，音声認識で作ったテキストを編集することになった。だがアルファベットの多い文章だと誤認識はどうしても増え，不満な私は途中で止めてついつい直してしまう。</p>
+<p>腱鞘炎で片手が使えなくなった私は，音声認識を利用して文章を作成する。だがアルファベットの多い言葉だと，どうしても誤認識が増える。不満な私は途中で止めてついつい直してしまう。</p>
 <p>「こっちの手も使えなくなったら足を使うしかないね」「休むという選択肢はないのか」</p>
-<p>「ねえ，音声認識でプログラミングってできるの？」</p>
-<p>ThinkPad は，当然，といったように， <a href="https://www.youtube.com/watch?v=8SkdfdXWYaI">音声プログラミングをする開発者</a> を紹介する。その他の動画でも披露される華麗な音声プログラミングに，私は見入ってしまった。</p>
+<p>ふと私は ThinkPad に何気なく質問した。「ねえ，音声認識でプログラミングってできるの？」</p>
+<p>ThinkPad はすぐに答える。「検索結果を表示しますか？」「動画があれば見せてほしい」「了解しました」</p>
+<p>画面に表示されたのは，<a href="https://www.youtube.com/watch?v=8SkdfdXWYaI">音声プログラミングをする開発者。</a> を紹介する。その他の動画でも披露される華麗な音声プログラミングに，私は見入ってしまった。</p>
+<p>その映像は，義肢エンジニア ・ Hugh Herr の言葉を思い出させる。</p>
 <blockquote>
 <p><a href="https://www.ted.com/talks/hugh_herr_the_new_bionics_that_let_us_run_climb_and_dance">I reasoned that a human being can never be &quot;broken.&quot; Technology is broken. Technology is inadequate. -- Hugh Herr.</a></p>
 </blockquote>
-<p>(私は人間が『壊れる』はずがないと考えた。技術のほうが壊れていて，技術のほうが足りないのだと)</p>
-<p>様々な可能性に想像が止まらなくなる。</p>
+<p>(私は人間が『壊れる』はずがないと考えた。テクノロジーのほうが壊れていて，テクノロジーが足りないのだと)</p>
+<p>可能性に想像が止まらなくなる。</p>
 <p>「…ああ，だめだめ。siteConfig の説明に戻るよ!」</p>
 <h1><a class="anchor" aria-hidden="true" id="siteconfigjs"></a><a href="#siteconfigjs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>siteConfig.js</h1>
 <p>「 <code>siteConfig.js</code> は <code>index.js</code> で使う情報とか，サイトの URL とか，いろいろ書かなきゃいけない」「複雑なのか？」「書くべき場所は決まってるからそんなに難しくないよ。私の場合はこんなかんじ」</p>
@@ -62,39 +64,39 @@
   organizationName: 'jamcha-aa',
 </code></pre>
 <p><br>
-「 <code>title</code> はサイトの名前， <code>tagline</code> はサブタイトルとか。 <code>projectName</code> と <code>organizationName</code> はそれぞれリポジトリ名とアカウント名。気をつけなきゃいけないのは <code>baseUrl</code> で， <code>index.js</code> はこれを見ながら画像とか文書の場所を探すから，正しく設定しないとトップページしか表示してくれなくなる」</p>
-<p>「baseUrl に注意ということだな」「そうそう。じゃあちょっと飛ばしてアイコン画像の設定を見よう」</p>
-<p><br></p>
-<pre><code class="hljs"> /* path to images for header/footer */
-headerIcon: 'img/jamcha.svg',
-footerIcon: 'img/jamcha.svg',
-favicon: 'img/favicon.png',
-
-/* colors for website */
-colors: {
-  primaryColor: '#b27ee2',
-  secondaryColor: '#205C3B',
-},
+「 <code>title</code> はサイトの名前， <code>tagline</code> はサブタイトルとか」</p>
+<p>「おい」EeePC が説明を止める。「見づらいんだが」</p>
+<p>「そうだね。それで <code>projectName</code> と…」「待て待て。わかってるなら直したらどうだ？Docusaurus にハイライト機能はついてないのか？」</p>
+<p>「ついてるよ。コードブロックの頭に拡張子つければ反映される。こんなふうに書く」</p>
+<pre><code class="hljs">```js
+const React = require('react');
+```
+</code></pre>
+<p>「じゃあどうして使わないんだ」「org-mode から markdown を出力してるから」「じゃあその markdown をなおせばいい」「いちいち？」「いちいち」</p>
+<p>「いち…いち…」</p>
+<p>私は糸のきれた人形のように，ドッ，と床につっぷした。身体を丸め，拳をかたく握りしめながら嗚咽をもらす。</p>
+<p>「い，イヤ…絶対イヤ…」「何も泣くことないだろう。だって，読む人が理解できなきゃ意味ないんだぞ？」「それでも…いい…」「頼む。お願いだ」</p>
+<p>いや…。お願い…誰か…助けて…。org-mode からシンタックスハイライトのついたコードブロックを markdown で出力する方法を教えて…</p>
+<p><br>
+「了解しました」</p>
+<p>「!？」</p>
+<p>突然響いてきた声に，私が身体を起こす。</p>
+<p>ThinkPad の輝かしい画面に， <a href="http://maskaw.hatenablog.com/entry/2018/02/13/084907">org-mode からシンタックスハイライトのついたコードブロックを markdown で出力する方法</a> が表示されていた。</p>
+<p>私は信じられないといった顔で画面をのぞきこむ。</p>
+<pre><code class="hljs">#+BEGIN_EXPORT html   
+```js
+const siteConfig = {
+  title: 'Docusaurus の逆襲' /* title for your website */,
+```
+#+END_EXPORT
 </code></pre>
 <p><br>
-「サイトの左上に表示されてるアイコンが <code>.svg</code> 。favicon はブラウザタブの左に描かれてるやつだね。あと，簡単だけどサイトの色も変えられるよ。 <code>primaryColor</code> が色ついてるやつ」</p>
-<p>「アイコンのファイルはどこに置くんだ？」「 <code>static</code> ってフォルダの中に <code>img</code> っていうのがあるから，そこに置く」</p>
-<p>「文書のなかで表示してきたファイルは？スクリーンショットとか」「 <code>docs</code> の中に <code>assets</code> ってフォルダを作って，その中に置く。リンクの書き方は markdown だとこんな感じ」</p>
-<p><br></p>
-<pre><code class="hljs">![SS1](./assets/SS1.png)
-</code></pre>
+そうか。こうすればいいのか。「あ，ありがとう…本当にありがとう…」私の涙は悲しみから喜びに変わった。そうして目尻をぬぐうと，ThinkPad に鼻声でたずねる。</p>
 <p><br>
-「よし!これで準備オッケー!次回はビルド!」</p>
-<p>「ひとついいか？」「ん？なに？」</p>
+「いちいち <code>#+BEGIN_EXPORT html</code> って入力するの面倒だからショートカットってない？」</p>
 <p><br>
-「君はこの作業，面倒だとは思わないのか？」</p>
-<p><br>
-本質的な質問に私の胃がしびれる。どうしてわざわざ GitBook や Docusaurus にしているのか。 <a href="https://github.github.com/gfm/">GitHub Flavored Markdown</a> ではだめなのか。</p>
-<p>「…」私は EeePC が何か言いそうなのを手で止め，少し考えてから口を開いた。</p>
-<p>「… <a href="https://texwiki.texjp.org/">TeX</a> ってさ，すっごくめんどくさいじゃん？なんで斜体にすんのにいちいち <code>{\it}</code> なんて書かなきゃならないんだー，とかさ」「…ああ」</p>
-<p>「でもがんばって設定して，初めて <code>dvipdfmx</code> で作った pdf を見たとき，『きれいだ』と思った。あんな記号だらけの文章から，こんなきれいなものができて，このきれいな模様を私が作ったんだって思ったら，なんかワクワクして」</p>
-<p>「そうだな。元のファイルからは想像もできない」</p>
-<p>「Docusaurus もそう。きれいだな，すごいなって。はじめは設定とか全然わからなかったけど，今はそこそこわかるし，きれいなものができるのは，楽しい，よ」</p>
+私にあきれはてる EeePC。それを尻目に ThinkPad は「 <code>&lt;h TAB</code> でブロックが作成されます」と答えた。</p>
+<p>次回につづく。</p>
 <p><br>
 <br>
 (c) 2018 jamcha (<a href="mailto:jamcha.aa@gmail.com">jamcha.aa@gmail.com</a>).</p>

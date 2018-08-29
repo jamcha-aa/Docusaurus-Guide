@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>09 - もう読める · Docusaurus の逆襲</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="「ここまで来たらあとはコマンド 1 個で読めるようになるんだけど」「おお」"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="09 - もう読める · Docusaurus の逆襲"/><meta property="og:type" content="website"/><meta property="og:url" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/index.html"/><meta property="og:description" content="「ここまで来たらあとはコマンド 1 個で読めるようになるんだけど」「おお」"/><meta property="og:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/jamcha.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/jamcha.svg"/><link rel="shortcut icon" href="/Docusaurus-Guide/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>09 - もう読める · Docusaurus の逆襲</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="# siteConfig.js"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="09 - もう読める · Docusaurus の逆襲"/><meta property="og:type" content="website"/><meta property="og:url" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/index.html"/><meta property="og:description" content="# siteConfig.js"/><meta property="og:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/jamcha.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://jamcha-aa.github.io/Docusaurus-Guide//Docusaurus-Guide/img/jamcha.svg"/><link rel="shortcut icon" href="/Docusaurus-Guide/img/favicon.png"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="https://unpkg.com/vanilla-back-to-top@7.1.14/dist/vanilla-back-to-top.min.js"></script><script>
         document.addEventListener('DOMContentLoaded', function() {
           addBackToTop(
             {"zIndex":100}
@@ -31,7 +31,59 @@
                 };
               }
             });
-        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">09 - もう読める</h1></header><article><div><span><p>「ここまで来たらあとはコマンド 1 個で読めるようになるんだけど」「おお」</p>
+        </script></nav></div><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">09 - もう読める</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="siteconfigjs"></a><a href="#siteconfigjs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>siteConfig.js</h1>
+<p>「 <code>siteConfig.js</code> は <code>index.js</code> で使う情報とか，サイトの URL とか，いろいろ書かなきゃいけない」「何か既視感があるな…」「書くべき場所は決まってるからそんなに難しくないよ。私の場合はこんなかんじ」「話がかみあってないぞ…」</p>
+<p>ドン!</p>
+<p>机が大きく揺れる。</p>
+<p>「誰のせいだと思ってるのかな？」「私は読者のことを考えただけだ」「君が余計なこと言ったせいで前回全然進まなかったんじゃん。タイトル詐欺だよ。わかってる？ <code>siteConfig.js</code> ってページ開いてさ，説明もしないで延々と漫才見せられる人の身にもなってよ」「じゃあ私の言う通りテキパキとやればいいだろう」「わかった。じゃあもう Docusaurus なんてやめてリポジトリに org ファイルだけ置いてく。それで満足でしょ？」「ふてるなよ…」「フテルとは何ですか？」「待って。急に話に入ってこられるとわけわかんなくなる」</p>
+<p>ThinkPad が会話に混ざってくると収拾がつかなくなる。私は不満をこらえて説明に戻ることにした。</p>
+<p><br></p>
+<pre><code class="hljs css language-js"><span class="hljs-keyword">const</span> siteConfig = {
+  <span class="hljs-attr">title</span>: <span class="hljs-string">'Docusaurus の逆襲'</span> <span class="hljs-comment">/* title for your website */</span>,
+    <span class="hljs-attr">tagline</span>: <span class="hljs-string">'Docusaurus で GitHub と遊ぶ。'</span>,
+  <span class="hljs-attr">url</span>: <span class="hljs-string">'https://jamcha-aa.github.io/Docusaurus-Guide/'</span> <span class="hljs-comment">/* your website url */</span>,
+  <span class="hljs-attr">baseUrl</span>: <span class="hljs-string">'/Docusaurus-Guide/'</span> <span class="hljs-comment">/* base url for your project */</span>,
+
+  <span class="hljs-comment">// Used for publishing and more</span>
+  projectName: <span class="hljs-string">'Docusaurus-Guide'</span>,
+  <span class="hljs-attr">organizationName</span>: <span class="hljs-string">'jamcha-aa'</span>,
+</code></pre>
+<p><br>
+「 <code>title</code> はサイトの名前， <code>tagline</code> はサブタイトルとか。 <code>projectName</code> と <code>organizationName</code> はそれぞれリポジトリ名とアカウント名。気をつけなきゃいけないのは <code>baseUrl</code> で， <code>index.js</code> はこれを見ながら画像とか文書の場所を探すから，正しく設定しないとトップページしか表示してくれなくなる」</p>
+<p>「君がちゃんと説明に戻ってくれて嬉しいよ。ふむ。 <code>baseUrl</code> に注意ということだな」「そうそう。じゃあちょっと飛ばしてアイコン画像の設定を見よう」</p>
+<p><br></p>
+<pre><code class="hljs css language-js">  <span class="hljs-comment">/* path to images for header/footer */</span>
+ headerIcon: <span class="hljs-string">'img/jamcha.svg'</span>,
+ <span class="hljs-attr">footerIcon</span>: <span class="hljs-string">'img/jamcha.svg'</span>,
+ <span class="hljs-attr">favicon</span>: <span class="hljs-string">'img/favicon.png'</span>,
+
+ <span class="hljs-comment">/* colors for website */</span>
+ colors: {
+   <span class="hljs-attr">primaryColor</span>: <span class="hljs-string">'#b27ee2'</span>,
+   <span class="hljs-attr">secondaryColor</span>: <span class="hljs-string">'#205C3B'</span>,
+ },
+</code></pre>
+<p><br>
+「このサイトの左上に表示されてるアイコンが <code>.svg</code> 。favicon はブラウザタブの左に描かれてるやつだね。あと，簡単だけどサイトの色も変えられるよ。 <code>primaryColor</code> が色ついてるやつ」</p>
+<p>「アイコンのファイルはどこに置くんだ？」「 <code>static</code> ってフォルダの中に <code>img</code> っていうのがあるから，そこに置く」</p>
+<p>「文書のなかで表示してきたファイルは？スクリーンショットとか」「 <code>docs</code> の中に <code>assets</code> ってフォルダを作って，その中に置く。リンクの書き方は markdown だとこんな感じ」</p>
+<p><br></p>
+<pre><code class="hljs css language-md">![<span class="hljs-string">SS1</span>](<span class="hljs-link">./assets/SS1.png</span>)
+</code></pre>
+<p><br>
+「よし!これで準備オッケー!それじゃあビルド!」</p>
+<p>「なあ，ひとつ聞いておきたいことがあるんだが」「ん？なに？」</p>
+<p><br>
+「君はこの作業，面倒だとは思わないのか？」</p>
+<p><br>
+本質的な質問に私の胃がしびれる。どうしてわざわざ GitBook や Docusaurus にしているのか。 <a href="https://github.github.com/gfm/">GitHub Flavored Markdown</a> ではだめなのか。</p>
+<p>「…」私は EeePC が何か言いそうなのを手で止め，少し考えてから口を開いた。</p>
+<p>「… <a href="https://texwiki.texjp.org/">TeX</a> ってさ，すっごくめんどくさいじゃん？なんで斜体にすんのにいちいち <code>{\it}</code> なんて書かなきゃならないんだー，とかさ」「…ああ」</p>
+<p>「でもがんばって設定して，初めて <code>dvipdfmx</code> で作った pdf を見たとき，『きれいだ』と思った。あんな記号だらけの文章から，こんなきれいなものができて，こんなきれいな模様を私が作ったんだって思ったら，なんかワクワクして」</p>
+<p>「そうだな。元のファイルからは想像もできない」</p>
+<p>「Docusaurus もそう。きれいだな，すごいなって。はじめは設定とか全然わからなかったけど，今はなんとなくわかるし。自分が成長しているみたいで，楽しいよ」</p>
+<h1><a class="anchor" aria-hidden="true" id="ビルド-デプロイ"></a><a href="#ビルド-デプロイ" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ビルド &amp; デプロイ</h1>
+<p>「ここまで来たらあとはコマンド 1 個で読めるようになるんだけど」「おお」</p>
 <p>「その前に， <a href="http://monsat.hatenablog.com/entry/generating-ssh-keys-for-github">SSH の公開鍵を作成して GitHub に登録</a> していない人は絶対してください!」</p>
 <p>「…君，それ <a href="https://jamcha-aa.github.io/Gitbook-Guide/01.html">前にも言った</a> な」「絶対してください!」</p>
 <p>「その説明はここではしないんだな」「絶対してください!」</p>
