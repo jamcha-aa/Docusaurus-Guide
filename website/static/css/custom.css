@@ -27,3 +27,7 @@ body{
     writing-mode: vertical-rl;
 }
 */
+
+body {
+    font-family: 'Sawarabi Mincho', sans-serif;
+}
