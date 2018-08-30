@@ -8,6 +8,10 @@ title: 05 - 決戦! "index.js"
 sidebar_label: 05 - 決戦! "index.js"
 ---
 
+<style>
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+</style>
+
   私が真っ暗な部屋で顔にライトを当てる。すかさず ThinkPad が言う。「気持ち悪いです」
 
   「不気味だって言ってよ!もう…」そう言ってライトを消し，部屋の照明をつけると，EeePC も私の奇行につっこんだ。「今の小芝居はなんだ？」「寿命が削られた私の気持ちを表しました」
@@ -107,6 +111,8 @@ sidebar_label: 05 - 決戦! "index.js"
 
   <br>
   <br>
-  (c) 2018 jamcha (jamcha.aa@gmail.com).
-                
+  (c) 2018 jamcha.
+
+  ![[https://services.nexodyne.com/email/icon/DmmOkiL%252B.Lhw/Owdx44Y%253D/R01haWw%253D/0/image.png][mail]]
+  
   ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]

@@ -8,6 +8,10 @@ title: 06 - 刮目せよ! 〜"index.js" を読む〜
 sidebar_label: 06 - 刮目せよ! 〜"index.js" を読む〜
 ---
 
+<style>
+@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
+</style>
+
   「あ，今回は Docusaurus の設定そのものとはあまり関係ないから，忙しい人は読まなくていいよ」
 
   「おい，じゃあどうしてわざわざひとつの話にしてるんだ」
@@ -70,6 +74,8 @@ sidebar_label: 06 - 刮目せよ! 〜"index.js" を読む〜
 
   <br>
   <br>
-  (c) 2018 jamcha (jamcha.aa@gmail.com).
-                
+  (c) 2018 jamcha.
+
+  ![[https://services.nexodyne.com/email/icon/DmmOkiL%252B.Lhw/Owdx44Y%253D/R01haWw%253D/0/image.png][mail]]
+  
   ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]
