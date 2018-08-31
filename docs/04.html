@@ -69,15 +69,22 @@ sidebar_label: Example Page
 <p>「待て。はやまるな。手をおろせ。そう。ゆっくりだ。あとで食べよう。あとで，な？」</p>
 <h1><a class="anchor" aria-hidden="true" id="footerjs"></a><a href="#footerjs" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Footer.js</h1>
 <p>「 <code>core</code> の中に一個だけあるファイル。これを編集すると，画面の一番下にあるちょっと暗い色の背景に文字のリンクが色々張ってあるやつを変えられる」「フッタな」「でも本とか論文とかのフッタとは役割がちょっと違うよね」「まあな。ただし，補助的な情報を表示するという意味では同じだ」</p>
-<p>「私の場合は要らないので全部消しました」</p>
+<p>「私の場合はほとんど要らないので整理しました」</p>
 <pre><code class="hljs">render() {
     const currentYear = new Date().getFullYear();
-    return ([]);
+    return (
+        &lt;footer className=&quot;nav-footer&quot; id=&quot;footer&quot;&gt;
+            &lt;center&gt;
+            &lt;section className=&quot;copyright&quot;&gt;{this.props.config.copyright}&lt;/section&gt;
+            &lt;img
+        src=&quot;https://licensebuttons.net/l/by-sa/4.0/88x31.png&quot;
+        alt=&quot;cc by-sa&quot;
+        width=&quot;88&quot;
+        height=&quot;31&quot;
+            /&gt;
+            &lt;/center&gt;
+            &lt;/footer&gt;
+    );
 }
 </code></pre>
-<p><br>
-<br>
-(c) 2018 jamcha.</p>
-<p><img src="./assets/mail.png" alt="mail"></p>
-<p><img src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" alt="cc by-sa"></p>
-</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Docusaurus-Guide/docs/03.html">← 03 - Slash の謎</a><a class="docs-next button" href="/Docusaurus-Guide/docs/05.html">05 - 決戦! &quot;index.js&quot; →</a></div></div></div><nav class="onPageNav"></nav></div></div></body></html>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/Docusaurus-Guide/docs/03.html">← 03 - Slash の謎</a><a class="docs-next button" href="/Docusaurus-Guide/docs/05.html">05 - 決戦! &quot;index.js&quot; →</a></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><center><section class="copyright">(c) 2018 jamcha (jamcha.aa@gmail.com).</section><img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="cc by-sa" width="88" height="31"/></center></footer></div></body></html>
