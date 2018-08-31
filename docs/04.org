@@ -87,8 +87,8 @@ sidebar_label: 04 - docs の書式と website
    <br>
   (c) 2018 jamcha.
 
-  ![[https://services.nexodyne.com/email/icon/DmmOkiL%252B.Lhw/Owdx44Y%253D/R01haWw%253D/0/image.png][mail]]
-  
+  ![[./assets/mail.png][mail]]
+
   ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]
 
 
