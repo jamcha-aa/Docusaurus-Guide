@@ -101,7 +101,9 @@ class Index extends React.Component {
               <MarkdownBlock>{`
 スマホの場合は画面左上の「×」で目次の表示/非表示ができます。
 
-Copyright (c) 2018 jamcha (jamcha.aa@gmail.com).
+Copyright (c) 2018 jamcha.
+
+![mail](https://services.nexodyne.com/email/icon/DmmOkiL%2B.Lhw/Owdx44Y%3D/R01haWw%3D/0/image.png)
 
 [![Built with Spacemacs](https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg)](http://spacemacs.org)
 
