@@ -74,21 +74,23 @@ sidebar_label: 04 - docs の書式と website
 
    「 ~core~ の中に一個だけあるファイル。これを編集すると，画面の一番下にあるちょっと暗い色の背景に文字のリンクが色々張ってあるやつを変えられる」「フッタな」「でも本とか論文とかのフッタとは役割がちょっと違うよね」「まあな。ただし，補助的な情報を表示するという意味では同じだ」
 
-   「私の場合は要らないので全部消しました」
+   「私の場合はほとんど要らないので整理しました」
 
   #+BEGIN_SRC 
-  render() {
-      const currentYear = new Date().getFullYear();
-      return ([]);
-  }
+    render() {
+        const currentYear = new Date().getFullYear();
+        return (
+            <footer className="nav-footer" id="footer">
+                <center>
+                <section className="copyright">{this.props.config.copyright}</section>
+                <img
+            src="https://licensebuttons.net/l/by-sa/4.0/88x31.png"
+            alt="cc by-sa"
+            width="88"
+            height="31"
+                />
+                </center>
+                </footer>
+        );
+    }
   #+END_SRC 
-
-   <br>
-   <br>
-  (c) 2018 jamcha.
-
-  ![[./assets/mail.png][mail]]
-
-  ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]
-
-

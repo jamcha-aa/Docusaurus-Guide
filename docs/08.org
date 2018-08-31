@@ -119,11 +119,3 @@ sidebar_label: 08 - siteConfig.js
    私にあきれはてる EeePC。それを尻目に ThinkPad は「 ~<h TAB~ でブロックが作成されます」と答えた。
 
    次回につづく。
-
-   <br>
-   <br>
-   (c) 2018 jamcha.
-
-  ![[./assets/mail.png][mail]]
-
-  ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]

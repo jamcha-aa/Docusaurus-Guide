@@ -94,11 +94,3 @@ sidebar_label: 09 - もう読める
    バン!私は ThinkPad のモニタを勢いよくキーボードに叩きつけ，布団にもぐった。EeePC もそれ以上何も言わなかった。
 
    身体は煮えたぎるように熱く，これだけ汗でびっしょりなのに，なぜか胸の奥はどこまでも冷たく，暗かった。
-
-  <br>
-  <br>
-  (c) 2018 jamcha.
-
-  ![[./assets/mail.png][mail]]
-
-  ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]

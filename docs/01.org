@@ -64,11 +64,3 @@ sidebar_label: 01 - Docusaurus が攻めてきた!
   「主文。被告を 『 Docusaurus を用いたドキュメント作成法』の刑に処す」
 
   そんな。あんまりだ。反抗する気力さえ奪われた私はヘナヘナとくずれ落ち，EeePC の命令するまま布団へと連行され，そして安らかな眠りについた。
-
-  <br>
-  <br>
-  (c) 2018 jamcha.
-
-  ![[./assets/mail.png][mail]]
-
-  ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]

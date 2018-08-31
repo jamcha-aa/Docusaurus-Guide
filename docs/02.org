@@ -81,11 +81,3 @@ sidebar_label: 02 - インストールはできるけど
   「これはすごい」EeePC も驚く。「修正内容をすぐに確認できるから，ページを作るのもはかどると思う」
 
   「見たところ何の問題もなさそうだが」「うん。問題があるのは私」「ほら，自分をけなすのが君の悪いクセだぞ」「Docusaurus のトップページに [[https://docusaurus.io/]["Easy to maintain"]] って書いてあったから，どうやってレイアウト変えるのか中身を見たらね，…全部 Javascript だったんだよ」
-
-  <br>
-  <br>
-  (c) 2018 jamcha.
-
-  ![[./assets/mail.png][mail]]
-
-  ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]

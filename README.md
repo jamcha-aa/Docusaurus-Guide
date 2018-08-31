@@ -19,7 +19,7 @@ Docusaurus で GitHub と遊ぶ。
 <br>  
 Copyright (c) 2018 jamcha (jamcha.aa@gmail.com).  
 
-Every document in this repository is licensed under the [License Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed)  
+This novel is licensed under the [License Creative Commons Attribution Share Alike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/deed)  
 
 ![cc by-sa](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)  
 

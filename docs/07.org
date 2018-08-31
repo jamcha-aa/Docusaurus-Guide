@@ -85,11 +85,3 @@ sidebar_label: 07 - sidebars.json
   「そしたらね，全然違ってた。Crockford さん本人が [[https://www.youtube.com/watch?v=-C-JoyNuQJs][講演]] で説明してたんだけど」「ふむ」「json みたいなデータ構造？のアイデアは昔からあって，自分はそれを発見したんだ，って言ってる」「なるほどな。それなら発見か」
 
   「うん。『こんな便利なものがあったんだ!』って感じだから発明じゃなくて発見」
-
-  <br>
-  <br>
-  (c) 2018 jamcha.
-
-  ![[./assets/mail.png][mail]]
-
-  ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]

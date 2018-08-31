@@ -85,11 +85,3 @@ sidebar_label: 10 - 再構築
   <br>
   <br>
   -- 了 --
-
-  <br>
-  <br>
-  (c) 2018 jamcha.
-
-  ![[./assets/mail.png][mail]]
-
-  ![[https://i.creativecommons.org/l/by-sa/4.0/88x31.png][cc by-sa]]
