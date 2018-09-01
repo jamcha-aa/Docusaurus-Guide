@@ -8,10 +8,6 @@ title: 09 - もう読める
 sidebar_label: 09 - もう読める 
 ---
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
-</style>
-
 ** siteConfig.js
 
    「 ~siteConfig.js~ は ~index.js~ で使う情報とか，サイトの URL とか，いろいろ書かなきゃいけない」「何か既視感があるな…」「書くべき場所は決まってるからそんなに難しくないよ。私の場合はこんなかんじ」「話がかみあってないぞ…」

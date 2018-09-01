@@ -8,10 +8,6 @@ title: 01 - Docusaurus が攻めてきた!
 sidebar_label: 01 - Docusaurus が攻めてきた!
 ---
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
-</style>
-
   私は裁判にかけられていた。私の健康と ThinkPad に甚大な被害をもたらした大怪獣 [[https://docusaurus.io/][Docusaurus]]，それを招いた責任を私に押しつけるために。もちろん私に弁護人などいない。これは私を処刑するために行われているのだから。
 
   無念だった。

@@ -8,10 +8,6 @@ title: 08 - siteConfig.js
 sidebar_label: 08 - siteConfig.js
 ---
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
-</style>
-
   「 ~siteConfig.js~ で気をつけなきゃいけないのは ~baseUrl~ で…」
 
   #+BEGIN_SRC 

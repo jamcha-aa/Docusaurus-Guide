@@ -8,10 +8,6 @@ title: 06 - 刮目せよ! 〜"index.js" を読む〜
 sidebar_label: 06 - 刮目せよ! 〜"index.js" を読む〜
 ---
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
-</style>
-
   「あ，今回は Docusaurus の設定そのものとはあまり関係ないから，忙しい人は読まなくていいよ」
 
   「おい，じゃあどうしてわざわざひとつの話にしてるんだ」

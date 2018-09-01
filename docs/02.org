@@ -8,10 +8,6 @@ title: 02 - インストールはできるけど
 sidebar_label: 02 - インストールはできるけど
 ---
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
-</style>
-
   私は ThinkPad に向きあったまま考えている。隣には EeePC が鎮座し，困ったときの補助として待機している。
 
   「手さぐりみたいになるけど，いい？」

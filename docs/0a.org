@@ -8,10 +8,6 @@ title: 10 - 再構築
 sidebar_label: 10 - 再構築
 ---
 
-<style>
-@import url('https://fonts.googleapis.com/css?family=Sawarabi+Mincho');
-</style>
-
   あとコマンド 1 つで Docusaurus の文書を公開できる。けれど，翌日になっても ThinkPad の置いてある机に向かおうとは思わなかった。
 
   まっさらな空間にこれだけ形の整ったページを作るのだから，どうしても手間はかかる。でも，手作り感があって，自分の実力も上がっているように思えて，それを私は楽しんでいたのに，ただラクかどうかだけで判断されるなんてどうしても我慢できなかった。
